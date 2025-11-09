@@ -1,5 +1,6 @@
 @import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
   html {
@@ -31,8 +32,17 @@
     overflow: hidden;
   }
 }
+.search-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
 
-/* Animation for loading spinner */
+.search-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
